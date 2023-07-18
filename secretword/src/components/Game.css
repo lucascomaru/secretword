@@ -1,48 +1,96 @@
-.game h1{
-    font-size: 2.5em;
-}
-
-.points span{
-    font-weight: bold;
-}
-
-.tip span{
-    color: #ecfa00;
-}
-
-.wordContainer{
-    margin: 1.5em;
-    padding: 1.5em;
-    border: 20px solid #ecfa00;
+.game {
     display: flex;
-}
-
-.letter, .blankSquare {
-    font-size: 70px;
-    line-height: 1.5;
-    border: 3px solid #000;
-    height: 100px;
-    width: 100px;
-    text-transform: uppercase;
-    background-color: #fff;
-    color:#000;
-    font-weight: bold;
-}
-
-.lettersContainer p{
-    margin-bottom: 1.2em;
-}
-
-.lettersContainer form{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    height: 100vh;
+  }
+  
+  .game-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .points {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .tip {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .wordContainer {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.letterContainer input{
-    height: 50px;
+    margin: 20px 0;
+  }
+  
+  .letterSquare {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #27cf27;
+  }
+  
+  .letter {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .blankSquare {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+  }
+  
+  .letterContainer {
+    margin: 20px 0;
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  input[type="text"] {
     width: 50px;
-    font-size: 2em;
-    text-align: center;
-    margin-right: 1em;
-}
+    font-size: 1.2em;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
+  
+  button {
+    font-size: 1.2em;
+    padding: 5px 10px;
+    background-color: #ecfa00;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .wrongLetterContainer {
+    margin-top: 20px;
+  }
+  
+  .wrongLetterContainer span {
+    margin-right: 5px;
+  }
+  
